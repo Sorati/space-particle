@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background-image: url('../assets/Main-Background-Space-Image-1.jpg');
+    background-size: cover;
+}
+.control-panel{
+    display: grid;
+    background-color: #f5deb31c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    color: #ffffff94;
+}
+
+.control-panel__item{
+    margin-bottom: 5px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.control-panel__input{
+    margin: 0 10px;
+    width: 50px;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ffffff94;
+
+    &:active, &:focus{
+        outline: none;
+    }
+}
