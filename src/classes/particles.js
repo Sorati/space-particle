@@ -11,17 +11,15 @@ export default class Particles{
 
         this.velocityX = Math.random()*(this.maxVelocity*2) - this.maxVelocity
         this.velocityY = Math.random()*(this.maxVelocity*2) - this.maxVelocity
-
-        // console.log(canvas.width)
     }
 
     position(){
         if ((this.x > this.canvas.width || this.x < 0)  || (this.y > this.canvas.height || this.y < 0 )){
             this.x = Math.random()*this.canvas.width
-            this.velocityX = Math.random()*(properties.particleMaxVelocity*2) - properties.particleMaxVelocity
+            this.velocityX = Math.random()*(this.maxVelocity*2) - this.maxVelocity
 
             this.y = Math.random()*this.canvas.height
-            this.velocityY = Math.random()*(properties.particleMaxVelocity*2) - properties.particleMaxVelocity
+            this.velocityY = Math.random()*(this.maxVelocity*2) - this.maxVelocity
         }
 
         this.x += this.velocityX
